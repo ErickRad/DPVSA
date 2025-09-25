@@ -10,6 +10,7 @@ from dataclasses import dataclass
 
 try:
     from ultralytics import YOLO
+    
 except Exception as e:
     YOLO = None
 
@@ -152,7 +153,7 @@ class HybridModel:
         seq = seq.unsqueeze(0)
 
         seq = seq.to(self.device)
-        
+
         with torch.no_grad():
             out = self.transformer(seq)
         return out
