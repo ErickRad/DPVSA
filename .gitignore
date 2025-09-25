@@ -1,0 +1,9 @@
+/bin
+/data
+/include
+/lib
+/lib64
+pyvenv.cfg
+__pycache__
+*.pyc
+*.pyo
